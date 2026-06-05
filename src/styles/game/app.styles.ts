@@ -1,0 +1,137 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+  },
+  overlay: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+  },
+  container: {
+    flex: 1,
+  },
+  content: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  text: {
+    fontSize: 24,
+    marginTop: 20,
+    color: '#fff',
+    position: 'absolute',
+    bottom: -80,
+    fontFamily: 'LuckiestGuy-Regular',
+    textShadowColor: 'rgba(255,255,255,0.5)',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 1,
+  },
+  buttonContainer: {
+    paddingHorizontal: 20,
+    paddingVertical: 24,
+  },
+  buttonRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10,
+    gap: 8,
+  },
+  button: {
+    flex: 1,
+    padding: 8,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderBottomWidth: 4,
+    borderLeftWidth: 0.1,
+    borderRightWidth: 0.1,
+    borderColor: '#999',
+    backgroundColor: '#f5f5f5',
+  },
+  buttonDisabled: {
+    opacity: 0.5,
+    backgroundColor: '#ccc',
+  },
+  selectedBtn: {
+    backgroundColor: '#4CAF50',
+    borderColor: '#388E3C',
+    opacity: 1,
+  },
+  selectedBtnText: {
+    color: '#FFFFFF',
+    textShadowColor: '#000000',
+    textShadowOffset: { width: 0.5, height: 0.5 },
+    textShadowRadius: 2.5, // Increase for a thicker outline look
+  },
+
+  buttonText: {
+    fontSize: 24,
+    color: '#222',
+    fontFamily: 'LuckiestGuy-Regular',
+  },
+  handContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    transform: [{ scale: 1.2 }],
+    position: 'absolute',
+    top: 280,
+    left: 0,
+    right: 0,
+  },
+  commentry: {
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.4)',
+    padding: 4,
+    marginBottom: 12,
+    borderRadius: 6,
+    backgroundColor: 'rgba(0,0,0,0.1)',
+  },
+  commentryText: {
+    color: '#fff',
+    fontSize: 14,
+    textAlign: 'center',
+    fontFamily: 'LuckiestGuy-Regular',
+  },
+  absoluteText: {
+    position: 'absolute',
+  },
+  overlayText: {
+    fontSize: 40,
+    color: 'white',
+    fontFamily: 'LuckiestGuy-Regular',
+    fontWeight: '800',
+  },
+  outline: {
+    color: 'black',
+    zIndex: -1,
+    fontSize: 40,
+    textShadowColor: 'black',
+    textShadowOffset: { width: -1, height: -1 },
+    textShadowRadius: 1,
+    fontFamily: 'LuckiestGuy-Regular',
+  },
+  historyButton: {
+    position: 'absolute',
+    top: 160,
+    alignSelf: 'center',
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    paddingHorizontal: 15,
+    paddingVertical: 8,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: '#fff',
+  },
+  historyButtonText: {
+    color: '#fff',
+    fontSize: 14,
+    fontFamily: 'LuckiestGuy-Regular',
+  },
+});
